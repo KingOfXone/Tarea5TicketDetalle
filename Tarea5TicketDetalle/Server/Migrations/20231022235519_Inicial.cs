@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace TicketDetalle.Server.Migrations
+namespace Tarea5TicketDetalle.Server.Migrations
 {
     /// <inheritdoc />
     public partial class Inicial : Migration

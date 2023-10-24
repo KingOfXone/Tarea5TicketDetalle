@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TicketDetalle.Server.DAL;
-using TicketDetalle.Shared;
+using Tarea5TicketDetalle.Server.DAL;
+using Tarea5TicketDetalle.Shared;
 
-namespace TicketDetalle.Server.Controllers
+namespace Tarea5TicketDetalle.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

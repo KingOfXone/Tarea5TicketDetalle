@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TicketDetalle.Server.DAL;
+using Tarea5TicketDetalle.Server.DAL;
 
 #nullable disable
 
-namespace TicketDetalle.Server.Migrations
+namespace Tarea5TicketDetalle.Server.Migrations
 {
     [DbContext(typeof(TicketContext))]
     [Migration("20231022235519_Inicial")]

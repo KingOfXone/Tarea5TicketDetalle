@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TicketDetalle.Server.DAL;
+using Tarea5TicketDetalle.Server.DAL;
 
 #nullable disable
 
-namespace TicketDetalle.Server.Migrations
+namespace Tarea5TicketDetalle.Server.Migrations
 {
     [DbContext(typeof(TicketContext))]
     partial class TicketContextModelSnapshot : ModelSnapshot

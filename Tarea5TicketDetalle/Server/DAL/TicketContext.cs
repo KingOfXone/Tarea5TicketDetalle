@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TicketDetalle.Shared;
+using Tarea5TicketDetalle.Shared;
 
-namespace TicketDetalle.Server.DAL
+namespace Tarea5TicketDetalle.Server.DAL
 {
     public class TicketContext : DbContext
     {
