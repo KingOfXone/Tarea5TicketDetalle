@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea5TicketDetalle.Server", "Tarea5TicketDetalle\Server\Tarea5TicketDetalle.Server.csproj", "{F15F93C0-C93B-4116-ABDF-F49C95F47F0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarea5TicketDetalle.Server", "Tarea5TicketDetalle\Server\Tarea5TicketDetalle.Server.csproj", "{F15F93C0-C93B-4116-ABDF-F49C95F47F0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea5TicketDetalle.Client", "Tarea5TicketDetalle\Client\Tarea5TicketDetalle.Client.csproj", "{27069368-D3DC-4A96-83D2-EA5C14E210FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarea5TicketDetalle.Client", "Tarea5TicketDetalle\Client\Tarea5TicketDetalle.Client.csproj", "{27069368-D3DC-4A96-83D2-EA5C14E210FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarea5TicketDetalle.Shared", "Tarea5TicketDetalle\Shared\Tarea5TicketDetalle.Shared.csproj", "{0B0362D0-A6FF-4B2F-BA54-B390BDAA3334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarea5TicketDetalle.Shared", "Tarea5TicketDetalle\Shared\Tarea5TicketDetalle.Shared.csproj", "{0B0362D0-A6FF-4B2F-BA54-B390BDAA3334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
