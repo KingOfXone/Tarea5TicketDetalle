@@ -12,16 +12,16 @@ namespace Tarea5TicketDetalle.Shared
 
         public DateTime Fecha { get; set; } = DateTime.Now;
 
-        [Required(ErrorMessage = "Es necesario completar el campo SolicitadoPor")]
+        [Required(ErrorMessage = "Es necesario para completar el campo SolicitadoPor")]
         public string? SolicitadoPor { get; set; } // Persona que va a solicitar
 
-        [Required(ErrorMessage = "Es necesario completar el campo Asunto")]
+        [Required(ErrorMessage = "Es necesario para completar el campo Asunto")]
         public string? Asunto { get; set; } // Asunto
 
-        [Required(ErrorMessage = "Es necesario completar el campo Descripcion")]
+        [Required(ErrorMessage = "Es necesario para completar el campo Descripcion")]
         public string? Descripcion { get; set; } // Descripción
 
-        [ForeignKey("TicketId")]
+        [ForeignKey("TicketId")] //llave foranea
         public ICollection<TicketsDetalle> TicketsDetalle { get; set; } = new List<TicketsDetalle>();
     }
 }
