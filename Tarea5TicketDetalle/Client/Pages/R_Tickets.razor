@@ -17,7 +17,7 @@
             </div>
             <div class=card-body>
 
-                @*Ticket Id:*@
+              
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
                     <label>Ticket Id:</label>
                     <div class="input-group mb-3">
@@ -26,52 +26,52 @@
                     </div>
                 </div>
 
-                @*Fecha:*@
+                
                 <div class="mb-3">
                     <label class="form-label" for="Fecha">Fecha:</label>
                     <InputDate @bind-Value="Ticket.Fecha" class="form-control" />
                     <ValidationMessage For="@(() => Ticket.Fecha)" />
                 </div>
 
-                @*SolicitadoPor*@
+               
                 <div class="mb-3">
                     <label class="form-label">Solicitado Por</label>
                     <InputText @bind-Value="Ticket.SolicitadoPor" class="form-control" placeholder="Nombre del solicitante" />
                     <ValidationMessage For="@(() => Ticket.SolicitadoPor)" />
                 </div>
 
-                @*Asunto*@
+              
                 <div class="mb-3">
                     <label class="form-label">Asunto</label>
                     <InputText @bind-Value="Ticket.Asunto" class="form-control" placeholder="Asunto" />
                     <ValidationMessage For="@(() => Ticket.Asunto)" />
                 </div>
 
-                @*Descripción*@
+             
                 <div class="mb-3">
                     <label class="form-label">Descripción</label>
                     <InputText @bind-Value="Ticket.Descripcion" class="form-control" placeholder="Descripción" />
                     <ValidationMessage For="@(() => Ticket.Descripcion)" />
                 </div>
 
-                @*DETALLE*@
+              
                 <fieldset class="border-secondary border border-1">
                     <h3 class="text-center">Detalles del ticket</h3>
                     <div class="row m-1">
                         
-                        @*Emisor *@
+                      
                         <div class="mb-3">
                             <label class="form-label">Emisor</label>
                             <InputText class="form-control" @bind-Value="Emisor"></InputText>
                         </div>
 
-                        @*Emisor *@
+                       
                         <div class="mb-3">
                             <label class="form-label">Mensaje</label>
                             <InputText class="form-control" @bind-Value="Mensaje"></InputText>
                         </div>
 
-                        @*Boton agregar *@
+                       
                         <div class="col-2">
                             <button type="button" class="btn btn-primary input-group-text" @onclick="AgregarDetalle">
                                 <span class="oi oi-plus">Agregar</span>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
 
-                    @*Tabla de detalles*@
+               
                     <div class="row m-1">
                         <hr />
                         <table class="table table-bordered table-light m-1">
@@ -130,8 +130,8 @@
 
     public int TicketId { get; set; }
 
-    public Tickets Ticket { get; set; } = new TicketDetalle.Shared.Tickets();
-    public IEnumerable<TicketsDetalle> TicketDetalle { get; set; } = Enumerable.Empty<TicketsDetalle>();
+    public Tickets Ticket { get; set; } = new Tarea5TicketDetalle.Shared.Tickets();
+    public IEnumerable<TicketsDetalle> Tarea5TicketDetalle { get; set; } = Enumerable.Empty<TicketsDetalle>();
 
     public string Emisor { get; set; } = string.Empty;
     public string Mensaje { get; set; } = string.Empty;
@@ -162,7 +162,7 @@
                     Severity = NotificationSeverity.Error,
                     Summary = "No se ha encontrado",
                     Detail = "No se ha encontrado el Ticket que estaba buscando",
-                    Duration = 4000
+                    Duration = 2000
                 };
             this.Nuevo();
         }
@@ -178,7 +178,7 @@
                     Severity = NotificationSeverity.Error,
                     Summary = "No se ha guardado el ticket",
                     Detail = response.ReasonPhrase ?? "error",
-                    Duration = 4000
+                    Duration = 2000
                 };
             notificationService.Notify(mensaje);
             return;
@@ -191,7 +191,7 @@
                     Severity = NotificationSeverity.Success,
                     Summary = "Se ha guardado el ticket",
                     Detail = "Se ha creado su ticket",
-                    Duration = 4000
+                    Duration = 2000
                 };
             notificationService.Notify(mensaje);
             Ticket = ticketDevuelto;
@@ -202,7 +202,7 @@
     public void Nuevo()
     {
         this.Ticket = new Tickets();
-        // = string.Empty;
+     
     }
 
     public async Task Eliminar()
@@ -215,7 +215,7 @@
                     Severity = NotificationSeverity.Error,
                     Summary = "No se ha Eliminado",
                     Detail = response.ReasonPhrase ?? "error",
-                    Duration = 4000
+                    Duration = 2000
                 };
             notificationService.Notify(mensaje);
             return;
